@@ -1,0 +1,15 @@
+git checkout -b GitWork
+echo "Hello from branch" > hello.xml
+git add .
+git commit -m "Added in branch"
+
+git checkout master
+echo "Hello from master" > hello.xml
+git add .
+git commit -m "Added in master"
+
+git merge GitWork
+git add hello.xml
+git commit -m "Resolved conflict"
+
+git branch -d GitWork

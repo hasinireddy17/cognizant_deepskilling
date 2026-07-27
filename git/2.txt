@@ -1,0 +1,7 @@
+touch test.log
+mkdir log
+touch .gitignore
+git status
+git add .gitignore
+git commit -m "Added gitignore"
+git push origin master
